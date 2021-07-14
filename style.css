@@ -10,9 +10,11 @@ main {
     align-items: center;
 
 }
+
 h5 {
     text-align: center;
 }
+
 /* buttons style start */
 .watchButton {
     font-family: Poppins;
@@ -167,9 +169,15 @@ iframe {
 
 /* highlight section ends */
 
-/* newsletter section starts */
-/* this is extra section */
-/* some of them are copied */
+/* 
+newsletter section starts
+ */
+/* 
+this is extra section
+ */
+/* 
+some of them are copied
+ */
 
 .parent-wrapper {
     position: relative;
@@ -198,7 +206,7 @@ iframe {
     right: -30px;
     height: 200px;
     padding: 30px;
-    background-image: url('https://i.imgur.com/MRjF1PL.png?1');
+    background-image: url('./images/subscribeButton.png');
     background-position-x: 272%;
     background-position-y: -1px;
     background-repeat: no-repeat;
@@ -297,4 +305,5 @@ footer {
     opacity: 0.8;
     color: black;
 }
+
 /* footer section ends */
