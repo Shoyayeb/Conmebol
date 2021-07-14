@@ -1,90 +1,140 @@
-/* 
-
-universal styles
-
-*/
-
-
+/* universal styles */
 body {
+    margin: 0;
     font-family: Poppins;
 }
-
-.container {
+main {
     display: flex;
-    
-}
-
-/* 
-
-first Section style here 
-
-*/
-.firstSection {
-    background-color: #2D25A0;
-    width: 100%;
-    height: 677px;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-.sectionTitle {
-    /* padding-top: 207px; */
-    padding-left: 156px;
-    
-    /* padding-bottom: 240px; */
+    /* justify-content: center; */
 }
 
-.titleText {
-    font-family: 'Poppins', sans-serif;
-    font-size: 64px;
-    font-weight: bold;
-    color: #FFFFFF;
-    /* width: 50%; */
-}
-
-.titleButton {
+/* buttons style start */
+.watchButton {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    background: #E02C6D;
+    background: rgb(224, 44, 109);
     padding: 10px 24px;
     text-decoration: none;
     color: white;
-    transition: 1s ease-in-out;
+    transition: .8s ease-in;
 }
 
-.sectionTitle a:hover {
-    background: #4F95DA;
-    border: 1px solid #91C9FF;
-    outline: none;
-    transition: 1s ease-in-out;
-}
 
-.titleButton .fas {
+
+.watchButton .fas {
     margin-left: 8px;
 }
 
-.sectionTitle a:hover .fas {
+.watchButton:hover .fas {
     animation: rightIcon .2s ease infinite alternate;
 }
 
-/* animation for first tittle button */
 @keyframes rightIcon {
     0% {
         color: white;
     }
 
     100% {
-        transform: translateX(5px);
+        transform: translateX(3px);
     }
 }
 
-/* animation for first tittle button ends*/
+/* button style ends */
 
 
-
-.sectionImage img {
-   height: 438px;
-   width: 556.0103149414062px;
+/*live Section styles */
+.liveSection {
+    background-color: #2D25A0;
+    width: 100%;
+    height: 677px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
 
 }
+
+.copaLive {
+    margin-left: 156px;
+}
+
+.liveTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.copaLive a:hover {
+    background: rgb(224, 44, 109);
+    background: linear-gradient(25deg, rgba(224, 44, 109, 1) 0%, rgb(255, 42, 106) 39%, rgb(255, 12, 61) 100%);
+    border: 1px solid #ffffff;
+    outline: none;
+}
+
+.copaImage {
+    width: fit-content;
+    margin: 0;
+}
+
+.copaImage img {
+    height: 438px;
+    width: 556.0103149414062px;
+}
+
+/* live section ends */
+
+/* best players section starts */
+.bestPlayer {
+    margin-top: 52px;  
+    margin-bottom: 27px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 30px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 330px;
+    height: 474px;
+    box-shadow: 1px 1px 10px rgb(243, 241, 241);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardImage img {
+    width: 300px;
+    height: 256px;
+}
+
+.cardTitle h2 {
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.cardText p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin-top: 0;
+}
+/* best player section ends */
+
+/* highlight section starts*/
