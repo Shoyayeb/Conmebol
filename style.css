@@ -3,11 +3,12 @@ body {
     margin: 0;
     font-family: Poppins;
 }
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+
 }
 
 /* buttons style start */
@@ -90,13 +91,13 @@ main {
 
 /* best players section starts */
 .bestPlayer {
-    margin-top: 52px;  
+    margin-top: 52px;
     margin-bottom: 27px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 27px;
     grid-row-gap: 30px;
-    
+
 }
 
 .card {
@@ -135,6 +136,60 @@ main {
     letter-spacing: 0em;
     margin-top: 0;
 }
+
 /* best player section ends */
 
 /* highlight section starts*/
+
+.highLight {
+    display: flex;
+
+    margin-left: 112px;
+    margin-right: 156px;
+    margin-top: 165px;
+    margin-bottom: 158px;
+}
+
+.highText h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+iframe {
+
+    width: 567px;
+    height: 427px;
+}
+
+/* highlight section ends */
+
+/* footer section starts */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.footerImage {
+    width: 483.87px;
+    height: 110px;
+    margin: 20px 0px;
+}
+
+.fab {
+    margin: 14px;
+    font-size: 30px;
+    color: #969BAB;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #E7E7E8;
+}
+
+.fab:hover {
+    opacity: 0.8;
+    color: black;
+}
