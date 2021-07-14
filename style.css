@@ -158,6 +158,12 @@ h5 {
     font-size: 48px;
     line-height: 60px;
 }
+.highLight .highText a:hover {
+    background: rgb(224, 44, 109);
+    background: linear-gradient(25deg, rgba(224, 44, 109, 1) 0%, rgb(255, 42, 106) 39%, rgb(255, 12, 61) 100%);
+    border: 1px solid #ffffff;
+    outline: none;
+}
 
 iframe {
 
